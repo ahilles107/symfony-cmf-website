@@ -15,7 +15,7 @@
         <h4>{{ group|capitalize }}</h4>
         <ul>
             {% for match in list %}
-                <li><a href="{{ path(match.name) }}">{{ match.name }}</a></li>
+                <li><a href="{{ path(match.id) }}">{{ match.title }}</a></li>
             {% endfor %}
         </ul>
     {% else %}
