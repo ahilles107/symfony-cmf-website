@@ -12,6 +12,7 @@ framework:
 
 # Twig Configuration
 twig:
+    exception_controller: cmf_seo.error.suggestion_provider.controller:showAction
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
 
@@ -58,7 +59,7 @@ cmf_seo:
         enable_parent_provider: true
         enable_sibling_provider: true
         templates:
-            html: ":exception:index.html.twig"
+            html: ":error:index.html.twig"
         exclusion_rules:
             - { path: 'excluded' }
     sitemap:

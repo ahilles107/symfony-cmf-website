@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b8fb42d0c293dcd475d5f1d34117e2e4",
+    "hash": "5c041e88a326d7c3c165ea09ed618e45",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -558,12 +558,12 @@
             "target-dir": "Doctrine/Bundle/DoctrineCacheBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/DoctrineCacheBundle.git",
+                "url": "git@github.com:doctrine/DoctrineCacheBundle.git",
                 "reference": "e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d",
+                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/9b7b22cea3aaaf6d53088c46a2cb08801ea38ace",
                 "reference": "e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d",
                 "shasum": ""
             },
@@ -1989,7 +1989,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/slippy/zipball/11ce345e241d2d86867032c269252c276f247ad1",
+                "url": "https://api.github.com/repos/Seldaek/slippy/zipball/4226610f5f49105bd7da9e9a3d7f4312243c41c4",
                 "reference": "11ce345e241d2d86867032c269252c276f247ad1",
                 "shasum": ""
             },
@@ -2755,35 +2755,34 @@
         },
         {
             "name": "symfony-cmf/seo-bundle",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/SeoBundle.git",
-                "reference": "a6bd51b24842a16f2546988b1a6f6960ac1127ed"
+                "reference": "c5835e1b56b97af8c4cdc513dc7976070f3a6ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/SeoBundle/zipball/a6bd51b24842a16f2546988b1a6f6960ac1127ed",
-                "reference": "a6bd51b24842a16f2546988b1a6f6960ac1127ed",
+                "url": "https://api.github.com/repos/symfony-cmf/SeoBundle/zipball/c5835e1b56b97af8c4cdc513dc7976070f3a6ead",
+                "reference": "c5835e1b56b97af8c4cdc513dc7976070f3a6ead",
                 "shasum": ""
             },
             "require": {
-                "doctrine/collections": "~1.0",
-                "php": ">=5.3.3",
-                "sonata-project/seo-bundle": "1.1.*",
-                "symfony/framework-bundle": "~2.3"
+                "doctrine/collections": "^1.0",
+                "php": "^5.3.9|^7.0",
+                "sonata-project/seo-bundle": "^1.1.3",
+                "symfony/framework-bundle": "^2.3"
             },
             "require-dev": {
-                "burgov/key-value-form-bundle": "~1.0",
-                "doctrine/orm": "~2.4",
-                "doctrine/phpcr-bundle": "~1.1",
-                "doctrine/phpcr-odm": "~1.1",
-                "matthiasnoback/symfony-config-test": "0.*",
-                "matthiasnoback/symfony-dependency-injection-test": "0.*",
-                "sonata-project/doctrine-phpcr-admin-bundle": "~1.1",
-                "symfony-cmf/core-bundle": "~1.1",
-                "symfony-cmf/routing-bundle": "~1.2",
-                "symfony-cmf/testing": "~1.1"
+                "burgov/key-value-form-bundle": "^1.0",
+                "doctrine/orm": "^2.4",
+                "doctrine/phpcr-odm": "^1.3",
+                "matthiasnoback/symfony-config-test": "~0.1",
+                "matthiasnoback/symfony-dependency-injection-test": "^0.7",
+                "sonata-project/doctrine-phpcr-admin-bundle": "^1.1",
+                "symfony-cmf/core-bundle": "^1.1",
+                "symfony-cmf/routing-bundle": "^1.2",
+                "symfony-cmf/testing": "^1.3"
             },
             "suggest": {
                 "burgov/key-value-form-bundle": "To edit the seo metadata 'extra' fields",
@@ -2797,7 +2796,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -2821,7 +2820,7 @@
                 "Symfony CMF",
                 "seo"
             ],
-            "time": "2014-10-21 08:17:18"
+            "time": "2016-04-04 11:36:39"
         },
         {
             "name": "symfony-cmf/simple-cms-bundle",
@@ -2892,12 +2891,12 @@
             "version": "v2.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/MonologBundle.git",
+                "url": "https://github.com/symfony/monolog-bundle.git",
                 "reference": "9320b6863404c70ebe111e9040dab96f251de7ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/9320b6863404c70ebe111e9040dab96f251de7ac",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/9320b6863404c70ebe111e9040dab96f251de7ac",
                 "reference": "9320b6863404c70ebe111e9040dab96f251de7ac",
                 "shasum": ""
             },

@@ -9,16 +9,16 @@
         We will fix it as soon as possible. Sorry for any inconvenience caused.
     </p>
 
-    {% if best_matches not is empty %}
-        <h3>Suggested pages</h3>
+    <h3>Suggested pages</h3>
 
-        {% for group, matches in best_matches %}
-            <h4>{{ group|capitalize }}</h4>
-            <ul>
-                {% for match in matches %}
-                    <li><a href="{{ path(match.name) }}">{{ match.name }}</a></li>
-                {% endfor %}
-            </ul>
-        {% endfor %}
-    {% endif %}
+    {% for group, list in best_matches if list is not empty %}
+        <h4>{{ group|capitalize }}</h4>
+        <ul>
+            {% for match in list %}
+                <li><a href="{{ path(match.name) }}">{{ match.name }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h4>No suggestions found</h4>
+    {% endfor %}
 {% endblock %}
