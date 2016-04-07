@@ -27,8 +27,6 @@ class SeoPage extends Page implements SeoAwareInterface, SitemapAwareInterface
      * @var bool
      *
      * @PHPCR\Boolean(property="visible_for_sitemap")
-     *
-     * @Todo Need to document that required value on document including the interface
      */
     private $isVisibleForSitemap;
 

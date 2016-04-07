@@ -2,7 +2,6 @@
 
 {% block content %}
     <ul class="cmf-sitemap">
-        <!-- todo: add a kind of an indent by node depth, create ISSUE on seo bundle -->
         {% for url in urls %}
             <li>
                 <a href="{{ url.location }}" title="{{ url.label }}">{{ url.label }}</a>
