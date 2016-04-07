@@ -10,6 +10,7 @@ use Doctrine\ODM\PHPCR\DocumentManager;
 use PHPCR\Util\NodeHelper;
 
 use Symfony\Cmf\Bundle\MenuBundle\Doctrine\Phpcr\MenuNode;
+use Symfony\Cmf\Bundle\SeoBundle\SitemapAwareInterface;
 use Symfony\Cmf\Component\Routing\RouteObjectInterface;
 use Symfony\Component\DependencyInjection\ContainerAware;
 use Symfony\Cmf\Bundle\SeoBundle\Model\SeoMetadataInterface;
@@ -90,7 +91,7 @@ class LoadStaticData extends ContainerAware implements FixtureInterface, Ordered
 
     private function loadPage(ObjectManager $manager, $basepath, $pageData)
     {
-        $class = isset($pageData['class']) ? $pageData['class'] : '\Symfony\Cmf\Bundle\SimpleCmsBundle\Doctrine\Phpcr\Page';
+        $class = isset($pageData['class']) ? $pageData['class'] : '\AppBundle\Document\SeoPage';
         $format = isset($pageData['format']) ? $pageData['format'] : 'html';
 
         $parent = (isset($pageData['parent']) ? trim($pageData['parent'], '/') : '');
@@ -135,6 +136,10 @@ class LoadStaticData extends ContainerAware implements FixtureInterface, Ordered
                 !empty($pageData['seo-metadata']['original-url']) ? $pageData['seo-metadata']['original-url'] : ''
             );
             $page->setSeoMetadata($seoMetadata);
+        }
+
+        if ($page instanceof SitemapAwareInterface) {
+            $page->setIsVisibleForSitemap(true);
         }
 
         $manager->persist($page);
