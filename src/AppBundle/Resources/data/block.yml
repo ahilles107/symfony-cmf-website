@@ -89,3 +89,12 @@ static:
                 on the international php conference 2015 in munich. He will suggest the
                 CMF as a way to serve CMS features to a given Symfony application. The
                 talk will be in german only.
+    ipc-2016-talk-in-berlin:
+        class: AppBundle\Document\TalkBlock
+        properties:
+            title: IPC Talk 2016 by @ElectricMaxxx in berlin
+            publishEndDate: "2016-06-01 17:00"
+            link: https://phpconference.com/session/mit-der-api-ins-cms
+            body: |
+                Maximilian Berghoff (@ElectricMaxxx) will give a talk about the REST interfaces
+                in CMS. He will draw some examples of existing and planed api features of Symfony CMF.
