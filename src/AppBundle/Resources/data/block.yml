@@ -97,4 +97,4 @@ static:
             link: https://phpconference.com/session/mit-der-api-ins-cms
             body: |
                 Maximilian Berghoff (@ElectricMaxxx) will give a talk about the REST interfaces
-                in CMS. He will draw some examples of existing and planed api features of Symfony CMF.
+                in CMS. He will draw some examples of existing and planed REST API features of Symfony CMF.
